@@ -17,7 +17,11 @@ __pycache__/
 *.jpg
 *.png
 /ui/
-/res/
+
+# ── res/ 默认忽略，但前端展示用的产品图片(res/product_images)需要入库 ──
+/res/*
+!/res/product_images/
+!/res/product_images/**
 
 # ── 运行时生成 / 敏感凭据 ──
 src/bebd_cookies.json
